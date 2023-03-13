@@ -13,12 +13,18 @@
 
     <!-- Strings used for HomePage -->
     <string name="welcome_to">Welcome to</string>
-    <string name="title">Tomodachi</string>
+    <string name="titleHP">Tomodachi</string>
     <string name="sub_title">Your ultimate guiding companion!</string>
-    <string name="description">Whether you're a first-time visitor or a seasoned traveler, our app is here to help you discover the hidden around the world.</string>
+    <string name="descriptionHP">Whether you're a first-time visitor or a seasoned traveler, our app is here to help you discover the hidden around the world.</string>
     <string name="lets_start">Let's start!</string>
     <string name="search">Search for a landmark</string>
     <string name="snap">Snap and  Discover  Landmarks</string>
     <string name="shops">Recomended  Shops</string>
     <string name="sign_up">Sign Up</string>
+
+
+    <!-- Strings used for SnapPage -->
+    <string name="titleSP">Subject-Placeholder</string>
+    <string name="descriptionSP">Description-Placeholder</string>
+    <string name="learn_more">Learn More</string>
 </resources>
