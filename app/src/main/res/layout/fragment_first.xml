@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textview0"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <TextView
         android:id="@+id/textview2"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textview1"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.222" />
 
     <TextView
         android:id="@+id/textview3"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textview2"
-        app:layout_constraintVertical_bias="0.215"
+        app:layout_constraintVertical_bias="0.120000005"
         app:layout_wrapBehaviorInParent="horizontal_only"
         tools:ignore="TextSizeCheck" />
 
@@ -74,52 +74,105 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textview3"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintVertical_bias="0.32999998" />
 
-    <Button
-        android:id="@+id/buttonDiscover"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Discover"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/search"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview4"
-        app:layout_constraintVertical_bias="0.287" />
-
-    <Button
-        android:id="@+id/buttonSnap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Snap"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview4" />
 
-    <Button
-        android:id="@+id/buttonShops"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shops"
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:text="@string/snap"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview5"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textview7"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:text="@string/shops"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview6"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <ImageButton
+        android:id="@+id/buttonSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/search"
+        android:src="@android:drawable/ic_menu_search"
+        android:text="@string/empty"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview4"
-        app:layout_constraintVertical_bias="0.712" />
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ImageButton
+        android:id="@+id/buttonSnap"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/search"
+        android:src="@android:drawable/ic_menu_camera"
+        android:text="@string/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview4"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <ImageButton
+        android:id="@+id/buttonShops"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/search"
+        android:src="@android:drawable/ic_menu_mapmode"
+        android:text="@string/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview4"
+        app:layout_constraintVertical_bias="0.642" />
 
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview4" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

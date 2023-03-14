@@ -21,6 +21,7 @@
     <string name="snap">Snap and  Discover  Landmarks</string>
     <string name="shops">Recomended  Shops</string>
     <string name="sign_up">Sign Up</string>
+    <string name="empty" />
 
 
     <!-- Strings used for SnapPage -->
