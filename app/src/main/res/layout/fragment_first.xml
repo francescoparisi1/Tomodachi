@@ -10,8 +10,10 @@
         android:id="@+id/textview0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/welcome_to"
-        app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
+        android:textSize="60sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,58 +22,104 @@
         android:id="@+id/textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
         android:text="@string/app_name"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintTop_toTopOf="@+id/textview0"
+        app:layout_constraintVertical_bias="0.227" />
 
     <TextView
         android:id="@+id/textview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:letterSpacing="0.2"
         android:text="@string/sub_title"
+        android:textAllCaps="false"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintTop_toTopOf="@+id/textview1"
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/textview3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/description"
+        android:layout_width="360dp"
+        android:layout_height="99dp"
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/descriptionHP"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintTop_toTopOf="@+id/textview2"
+        app:layout_constraintVertical_bias="0.215"
+        app:layout_wrapBehaviorInParent="horizontal_only"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textview4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script"
         android:text="@string/lets_start"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/buttonSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textview3"
         app:layout_constraintVertical_bias="0.916" />
+
+    <Button
+        android:id="@+id/buttonDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview4"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <Button
+        android:id="@+id/buttonSnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview4" />
+
+    <Button
+        android:id="@+id/buttonShops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shops"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview4"
+        app:layout_constraintVertical_bias="0.712" />
 
     <Button
         android:id="@+id/buttonSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/sign_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview0" />
+        app:layout_constraintTop_toBottomOf="@+id/textview4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
