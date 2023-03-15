@@ -155,7 +155,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
-        android:contentDescription="@string/search"
+        android:contentDescription="@string/shops"
         android:src="@android:drawable/ic_menu_mapmode"
         android:text="@string/empty"
         app:layout_constraintBottom_toBottomOf="parent"
